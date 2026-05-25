@@ -8,43 +8,10 @@
     <title>Digoronto Agric-Shop</title>
     <style>
 
-
         header {
             background-color: whitecream;
             padding: 50px;
         }
-        
-
-        
-  
-        
-        
-                
-            footer ul {
-                display: flex;
-                justify-content: center;
-                list-style-type: none;
-                padding: 20;
-            }
-            footer li {
-                flex: 1;
-                text-align: center;
-            }
-            
-            }
-            footer li a:hover {
-                color:rgb(48, 81, 3);
-            }
-            footer {
-                background-color: whitecream;
-                padding: 20px;
-                margin-bottom: 20px;
-            }
-            
-            
-           
-           
-           
             #logo img {
                 float: left;
                 width: 190px;
@@ -93,11 +60,32 @@
         
             
         <footer>
-            <ul>
-                <li>Contact us</li>
-                <li>FAQ's</li>
-                <li>Terms of Service</li>
-            </ul>
+           <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Contact us
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> info@digoronto.co.bw.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        About us
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> Digoronto Agric-Shop was founded with a single, clear purpose to make quality agricultural inputs accessible to every farmer in Botswana, whether they till one hectare or one hundred.
+
+The name "Digoronto" — meaning fruits in Setswana — reflects our inspiration from the desire to symbolize the ultimate results of a harvest and the hardworking farmers who feed our communities.
+
+Starting from our flagship branch in Moshupa, we have grown steadily by listening to farmers, understanding their unique challenges and stocking solutions that actually work in Botswana's climate and soils. </div>
+    </div>
+  </div>
+  
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
