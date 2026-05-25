@@ -7,22 +7,124 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Digoronto Agric-Shop</title>
     <style>
+        
 
+        #wrapper {
+            border: 0px solid rgb(0, 0, 0);
+        }
+
+        
         header {
             background-color: whitecream;
             padding: 50px;
         }
+        
+
+        
+        #main-content ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+         #main-content li {
+            flex: 1;
+            padding: 10px;
+             background-color: rgba(255, 255, 255, 0.171);
+            margin: 5px;
+            border-radius: 5px;
+         }
+            #main-content li a {
+            text-decoration: none;
+            color: white;
+            }
+             #main-content li a:hover {
+                color:rgb(48, 81, 3);   
+        }
+
+         h3 {
+                text-align: center;
+                margin-top: 40px;
+            }
+             h4 {
+                text-align: center;
+            }
+         #featured-articles {
+            display: flex;
+            justify-content: space-between;
+         }
+            #featured-articles section {
+                flex: 1;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.281);
+                margin: 10px;
+                border-radius: 5px;
+            }
+                #featured-articles section h4 a {
+                    text-decoration: none;
+                    color: black;
+                }
+                 #featured-articles section h4 a:hover {
+                    color:rgb(48, 81, 3);
+            }
+            #mission-vision {
+                display: flex;
+                justify-content: space-between;
+            }
+            #mission-vision section {
+                flex: 1;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.664);
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            footer ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding: 20;
+            }
+            footer li {
+                flex: 1;
+                text-align: center;
+            }
+            
+            footer li a:hover {
+                color:rgb(48, 81, 3);
+            }
+            footer {
+                background-color: whitecream;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+
+        
+            #back-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            
+           
             #logo img {
                 float: left;
                 width: 190px;
                 height: auto;
+                background: transparent;
             }
         
     </style>
 </head>
 <body>
-  
-          
+
+    <div class="container">
+            <video autoplay loop muted plays-inline id="back-video">
+                <source src="Multimedia/royalty.mp4.mp4" type="video/mp4">
+            </video>
         
         <header>
             <div id="logo">
@@ -33,7 +135,7 @@
     
 
     
-       <nav class="navbar navbar-expand-lg sticky-top bg-body-transparent">
+       <nav class="navbar navbar-expand-lg sticky-top bg-body-info">
   <div class="container-fluid">
 
 
@@ -57,8 +159,47 @@
 
     
     
-        
+            <section id="main-content">
+                <ul>
+                <li><a href="coupon.html">We assist famers who have Lemang Dijo coupons</a></li>
+                <li><a href="armyworm.html">Protecting farms from Fall armyworm</a></li>
+                <li><a href="technique.html">Know the latest agricultural techniques</a></li>
+                <li><a href="productivity.html">Accelerating agricultural productivity</a></li>
+                </ul>
+            </section>
+       
+        <h3>Featured articles</h3>
+        <div id="featured-articles">
+          
+            <section id="leftsidebar">
+                <h4><a href="testimonials.html">Farmers testimonials</a></h4>
+                <p>Our products and services have transformed the lives of farmers, boosting their productivity and profitability.</p>
+            </section>
             
+            <section id="middlebar">
+                <h4><a href="shows.html">Join us for some Agricultural shows fun</a></h4>
+                <p>Discover the latest trends and innovations in agriculture by attending upcoming National and International Agricultural shows.</p>
+            </section>
+           
+            <section id="rightsidebar">
+                <h4><a href="materials.html">Learning materials</a></h4>
+                <p>Access a wealth of learning materials including PDF's and videos.</p>
+            </section>
+            </div>
+        </div>
+        <h3>Mission and Vision</h3>
+        <div id="mission-vision">
+            
+            <section id="leftsidebar">
+                <h4>Mission</h4>
+                <p>To provide high-quality Arable agriculture products and services that empower farmers to achieve sustainable growth and food security.</p>
+            </section>
+            
+            <section id="rightsidebar">
+                <h4>Vision</h4>
+                <p>To be the leading Arable agriculture company in Botswana, recognized for our commitment to innovation, sustainability and customer satisfaction.</p>
+            </section>
+        </div>
         <footer>
            <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -68,7 +209,7 @@
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"> info@digoronto.co.bw.</div>
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
     </div>
   </div>
   <div class="accordion-item">
@@ -78,17 +219,14 @@
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">o demonstrate the <code> Digoronto Agric-Shop was founded with a single, clear purpose to make quality agricultural inputs accessible to every farmer in Botswana, whether they till one hectare or one hundred.
-
-The name "Digoronto" — meaning fruits in Setswana — reflects our inspiration from the desire to symbolize the ultimate results of a harvest and the hardworking farmers who feed our communities.
-
-Starting from our flagship branch in Moshupa, we have grown steadily by listening to farmers, understanding their unique challenges and stocking solutions that actually work in Botswana's climate and soils. </div>
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
     </div>
   </div>
-  
+ 
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</div>
 </body>
 </html> 
